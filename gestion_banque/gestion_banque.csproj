@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AF4C6D69-60F9-4CDB-9B77-A30D1C307936}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>gestion_banque</RootNamespace>
+    <AssemblyName>gestion_banque</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ajouter client.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ajouter client.Designer.cs">
+      <DependentUpon>ajouter client.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ajouter_compte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ajouter_compte.Designer.cs">
+      <DependentUpon>Ajouter_compte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ajouter_mouvement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ajouter_mouvement.Designer.cs">
+      <DependentUpon>Ajouter_mouvement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ajouter_virement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ajouter_virement.Designer.cs">
+      <DependentUpon>ajouter_virement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="client.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="client.Designer.cs">
+      <DependentUpon>client.cs</DependentUpon>
+    </Compile>
+    <Compile Include="compte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="compte.Designer.cs">
+      <DependentUpon>compte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modification compte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modification compte.Designer.cs">
+      <DependentUpon>Modification compte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="modifier_client.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modifier_client.Designer.cs">
+      <DependentUpon>modifier_client.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="recherche client.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="recherche client.Designer.cs">
+      <DependentUpon>recherche client.cs</DependentUpon>
+    </Compile>
+    <Compile Include="supprimer client.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="supprimer client.Designer.cs">
+      <DependentUpon>supprimer client.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Supprimer compte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supprimer compte.Designer.cs">
+      <DependentUpon>Supprimer compte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="supprimer mouvement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="supprimer mouvement.Designer.cs">
+      <DependentUpon>supprimer mouvement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="supprimer virement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="supprimer virement.Designer.cs">
+      <DependentUpon>supprimer virement.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ajouter client.resx">
+      <DependentUpon>ajouter client.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ajouter_compte.resx">
+      <DependentUpon>Ajouter_compte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ajouter_mouvement.resx">
+      <DependentUpon>Ajouter_mouvement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ajouter_virement.resx">
+      <DependentUpon>ajouter_virement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="client.resx">
+      <DependentUpon>client.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="compte.resx">
+      <DependentUpon>compte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modification compte.resx">
+      <DependentUpon>Modification compte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modifier_client.resx">
+      <DependentUpon>modifier_client.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="recherche client.resx">
+      <DependentUpon>recherche client.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="supprimer client.resx">
+      <DependentUpon>supprimer client.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supprimer compte.resx">
+      <DependentUpon>Supprimer compte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="supprimer mouvement.resx">
+      <DependentUpon>supprimer mouvement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="supprimer virement.resx">
+      <DependentUpon>supprimer virement.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
